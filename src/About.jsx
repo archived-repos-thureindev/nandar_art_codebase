@@ -1,10 +1,18 @@
-import "./assets/styles/About.css";
+
 import HeadBanner from "./components/HeadBanner";
+
+import "./assets/styles/About.css";
+import bannerImg from "./assets/images/about-banner.png"
+import slideshowImg from "./assets/images/full/pavilion.png"
 
 const About = () => {
     return (
-        <>
-            <HeadBanner title={"About Me"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos ducimus delectus similique quod doloribus expedita reprehenderit ratione, ullam obcaecati repellendus voluptate necessitatibus! Necessitatibus reiciendis velit quis, sequi iste temporibus!"} />
+        <main className="about-page">
+            <HeadBanner
+                title={""}
+                subtitle={""}
+                imgUrl={`url(${bannerImg})`}
+            />
 
             {/* About */}
             <div className="flex-container about-container">
@@ -28,18 +36,25 @@ const About = () => {
 
                 <div className="flex-item about-slideshow">
                     <div className="about-slideshow-content">
-                        Slideshow Content
+                        <img src={slideshowImg} alt="roman pavilion" />
                     </div>
                 </div>
             </div>
 
-            <h2 className="quote-block">
+            <h2 className="quote-block full-line-block" style={{ backgroundColor: "skyblue" }}>
                 <p className="quote-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eum, id dolorem modi iusto, officia nesciunt in facilis deleniti laborum inventore quasi accusantium sit nostrum? Dolores ducimus natus provident quos!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam culpa porro aut? Minima odio, omnis, cum quos ipsa assumenda rerum ea dolor, quae asperiores consequatur ad autem incidunt nulla officia!
                 </p>
                 <span className="quote-author">Michael Angelo</span>
             </h2>
-        </>
+
+            <h2 className="quote-block full-line-block">
+                <p className="quote-content">
+                    Every block of stone has a statue inside it and it is the task of the sculptor to discover it.
+                </p>
+                <span className="quote-author">Michael Angelo</span>
+            </h2>
+        </main>
     )
 }
 

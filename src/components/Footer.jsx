@@ -24,7 +24,7 @@ const Footer = () => {
                                 <SiBuymeacoffee /></a></li>
                     </ul>
 
-                    <span className="copyright">All rights reserved</span>
+                    {/* <span className="copyright">All rights reserved</span> */}
                 </div>
             </footer>
         </>

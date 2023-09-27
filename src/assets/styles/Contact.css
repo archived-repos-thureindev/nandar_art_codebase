@@ -7,10 +7,15 @@
 .inquiry-form {
     background-color: green;
 } */
-
+.inquiry-block {
+    background-color: var(--inquiry-block-color) !important;
+    /* background-color: cyan !important; */
+}
 .inquiry-container {
     padding: 1.6rem 0;
+
 }
+
 .inquiry-container>.flex-item {
     text-align: left;
     margin: 1.5rem;
@@ -32,26 +37,41 @@
         padding: 0;
     }
 }
+.inquiry-info-icon {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
 
 .inquiry-info-title {
-    /* background-color: peru; */
-
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 2.1rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .inquiry-info-text {
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 400;
 
     margin-bottom: 1rem;
 }
 
-.inquiry-info-email {
+.inquiry-info-email, .inquiry-info-phone {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1rem;
+}
+.inquiry-info-email a, .inquiry-info-phone a {
+    color: #646cff;
+    text-decoration: underline;
+    transition: color 0.25s;
+}
+.inquiry-info-email a:hover {
+    color: #9da2ff;
+    text-decoration: none;
+}
+.inquiry-info-phone a:hover {
+    color: #9da2ff;
+    text-decoration: none;
 }
 
 /* input {
@@ -62,70 +82,36 @@ textarea {
     border-radius: 8px;
 } */
 
+.inquiry-form-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
 .inquiry-form-name-group {
     display: flex;
     width: 100%;
+    
+    margin-bottom: 2rem;
+}
+.inquiry-form-name-group label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.inquiry-form-email-group {
+    margin-bottom: 2rem;
+}
+.inquiry-form-email-group label {
+    display: block;
+    padding-bottom: 0.5rem;
 }
 
-.inquiry-form-fname, .inquiry-form-lname {
+.inquiry-form-fname,
+.inquiry-form-lname {
     flex: 1;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid #1a1a1a;
-    background-color: none;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    cursor: pointer;
-    transition: all 0.25s;
-}
-
-button:hover {
-    border-color: #646cff;
-    background-color: #646cff;
-    color: #fff;
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
-/* Style text inputs, email inputs and textareas */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 15px solid #000; /* Adjust the color as needed */
-  background: transparent;
-  margin-bottom: 20px;
-  padding: 5px 0; /* Add some padding to the top and bottom of the input */
-  font-size: 16px;
-  outline: none;
-}
-
-/* Add some style to textarea */
-textarea {
-  resize: vertical; /* Allows vertical resizing */
-}
-
-/* Style the submit button */
-button[type="submit"] {
-  background-color: #000; /* Adjust the color as needed */
-  color: #fff; /* Adjust the text color as needed */
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/* Add some hover effect to the submit button */
-button[type="submit"]:hover {
-  background-color: #333; /* Adjust the hover color as needed */
+.inquiry-form-fname {
+    padding-right: 3rem;
 }
 
 
@@ -135,21 +121,23 @@ button[type="submit"]:hover {
 .instagram-title {
     font-size: 1.6rem;
     font-weight: 600;
+
+    color: #fff;
+
     width: 100%;
     margin: 0;
     padding: 0;
 
-    background-color: rgb(104, 115, 204);
-    
-    background-image: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80);
+    background-color: var(--instagram-title-color);
+
+    /* background-image: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-.instagram-title:hover {
-    
-}
+
+.instagram-title:hover {}
 
 .instagram-title>span {
     display: inline-block;
@@ -160,9 +148,5 @@ button[type="submit"]:hover {
 .instagram-content {
     width: 100%;
     margin: 0;
-    padding: 0;
-}
-
-main {
-    background-color: rgb(179, 186, 230);
+    padding: 0 !important;
 }

@@ -3,14 +3,15 @@ import HeadBanner from "./components/HeadBanner";
 
 const Home = () => {
     return (
-        <>
-            <HeadBanner title={"This is Home"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos ducimus delectus similique quod doloribus expedita reprehenderit ratione, ullam obcaecati repellendus voluptate necessitatibus! Necessitatibus reiciendis velit quis, sequi iste temporibus!"}/>
+        <main className="home-page">
 
-            <h1>Nandar Blender</h1>
-            <p className="home-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos ducimus delectus similique quod doloribus expedita reprehenderit ratione, ullam obcaecati repellendus voluptate necessitatibus! Necessitatibus reiciendis velit quis, sequi iste temporibus!
-            </p>
-        </>
+            <HeadBanner
+                title={"Hello, I'm Nandar.\nA digital artist, exploring the realms of art and creativity."}
+                subtitle={"Discover my journey, my evolving portfolio, and how my artistry can bring your visions to life."} />
+
+            <h2 className="full-line-block">Nandar Blender</h2>
+
+        </main>
     )
 }
 

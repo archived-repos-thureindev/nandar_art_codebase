@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import "../assets/styles/HeadBanner.css";
+import bannerImg from "../assets/images/home-banner.png"
+import PropTypes from "prop-types";
 
-const HeadBanner = ({ title, content, imgUrl = "url(https://images.unsplash.com/photo-1692728530148-05e4c86f1758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80)" }) => {
+const HeadBanner = ({ title, subtitle, imgUrl = `url(${bannerImg})` }) => {
 
     useEffect(() => {
-        document.documentElement.style.setProperty("--bg-url", imgUrl);
+        document.documentElement.style.setProperty("--bg-imgUrl", imgUrl);
 
         return () => {
             document.documentElement.style.removeProperty("--bg-url");
@@ -12,22 +14,34 @@ const HeadBanner = ({ title, content, imgUrl = "url(https://images.unsplash.com/
     }, []);
 
     return (
-        <div
-            id="home-bg"
-            className="bg-image"
-        >
-            <div className="mask text-white">
-                <div className="container d-flex align-items-center text-center h-100">
-                    <div>
-                        <h1 className="mb-5">{title}</h1>
-                        <p>
-                            {content}
-                        </p>
-                    </div>
+        <div className="bg-image">
+            <div className="mask">
+                <div className="banner-text">
+
+                    <h1 className="banner-title mb-5">
+                        {
+                            title.split("\n").map((line, index) => {
+                                return (
+                                    <span key={index}>
+                                        {line}
+                                        <br />
+                                    </span>
+                                )
+                            })
+                        }
+                    </h1>
+                    <p className="banner-subtitle">
+                        {subtitle}
+                    </p>
                 </div>
             </div>
         </div>
     )
 }
 
+HeadBanner.propTypes = {
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    imgUrl: PropTypes.string
+}
 export default HeadBanner

@@ -6,6 +6,7 @@
     left: 0;
     right: 0;
 
+    z-index: 10;
 }
 .navbar-brand {
     position: absolute;
@@ -33,30 +34,6 @@
     color: rgb(48, 48, 48) !important;
 }
 
-/* Color of the links BEFORE scroll 
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler .fa-bars {
-  color: #fff;
-}
-
-/* Color of the links AFTER scroll 
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler .fa-bars {
-  color: #4f4f4f;
-}
-
-/* Color of the navbar AFTER scroll 
-.navbar-scrolled {
-  background-color: #fff;
-}
-
-/* An optional height of the navbar AFTER scroll 
-.navbar.navbar-scroll.navbar-scrolled {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-*/
-
 /* Navbar.css */
 .navbar .social-links {
     position: absolute;
@@ -65,13 +42,12 @@
 }
 
 .navbar .social-links a {
-    margin-left: 10px; /* Add some spacing between the links */
-    color: #fff; /* Color of the links */
-    text-decoration: none; /* Remove underline */
+    color: #fff; 
+    transition: color 0.6s ease;
 }
 
 .navbar .social-links a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    color: #9da2ff;
 }
 
 .navbar .social-link {

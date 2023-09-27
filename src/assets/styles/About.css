@@ -1,16 +1,25 @@
+.about-page {
 
+}
+.about-page .intro-block {
+
+}
 .about-container {
+    margin: 0;
     flex-direction: row-reverse;
 }
-.about-container > .flex-item {
+
+.about-container>.flex-item {
+    margin: 0;
     text-align: left;
-    margin: 1.5rem 0;
 }
+
 @media screen and (orientation: portrait) {
     .about-container {
         flex-direction: column;
     }
-    .about-container > .flex-item {
+
+    .about-container>.flex-item {
         margin: 0;
     }
 }
@@ -27,8 +36,9 @@
 
     background-color: brown;
 }
-.about-info > * {
-    
+
+.about-info>* {
+
     max-width: 500px;
     /* margin-left: 10%; */
 }
@@ -38,11 +48,13 @@
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .about-info-paragraph {
     font-size: 1.2rem;
     font-weight: 200;
     margin-bottom: 1rem;
 }
+
 .about-info-emphasis {
     font-size: 1.6rem;
     font-weight: 400;
@@ -55,14 +67,10 @@
 }
 
 .quote-block {
-    font-size: 1.2rem;
-    font-weight: 600;
-    
-    padding: 4.5rem 1rem;
-    background-color: aquamarine;
+    padding-right: 20% !important;
+    padding-left: 20% !important;
 }
-.quote-content {
 
-}
-.quote-author {
-}
+.quote-content {}
+
+.quote-author {}
