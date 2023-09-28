@@ -1,15 +1,8 @@
-/* .inquiry-container {
-    background-color: red;
-}
-.inquiry-container .inquiry-info {
-    background-color: blue;
-}
-.inquiry-form {
-    background-color: green;
-} */
+
 .inquiry-block {
+    font-family: 'Roboto Condensed', sans-serif; /* Light 300 Regular 400 Bold 700 */
+    font-weight: 300;
     background-color: var(--inquiry-block-color) !important;
-    /* background-color: cyan !important; */
 }
 .inquiry-container {
     padding: 1.6rem 0;
@@ -74,17 +67,10 @@
     text-decoration: none;
 }
 
-/* input {
-    border-radius: 8px;
-}
-
-textarea {
-    border-radius: 8px;
-} */
 
 .inquiry-form-title {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 .inquiry-form-name-group {
@@ -117,7 +103,11 @@ textarea {
 
 
 
-
+.instagram-block {
+    
+    font-family: 'Open Sans', sans-serif; /* Regular 400 SemiBold 600 ExtraBold 800 */
+    font-weight: 400;
+}
 .instagram-title {
     font-size: 1.6rem;
     font-weight: 600;
@@ -137,7 +127,9 @@ textarea {
     background-attachment: fixed;
 }
 
-.instagram-title:hover {}
+.instagram-title:hover {
+
+}
 
 .instagram-title>span {
     display: inline-block;

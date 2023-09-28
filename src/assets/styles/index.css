@@ -1,22 +1,47 @@
 #root {
     --instagram-title-color: rgb(104, 115, 204);
-    --block-bg-color: rgb(248, 246, 228);
+    --ivory-color: rgb(248, 246, 228); /* Ivory */
+    --btn-hover-bg-color: rgba(248, 246, 228, 0.45);
+    --block-bg-color: #fdf6e4; /* Ivory */
     --block-bg-color-about-page: rgb(218, 71, 71);
     --inquiry-block-color: rgb(234, 238, 242);
 
     margin: 0 auto;
     text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    /* Regular 400 SemiBold 600 ExtraBold 800 */
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* Light 300 Regular 400 Bold 700 */
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    /* Thin 100 Light 300 Medium 500 Bold 700 */
+    font-weight: 300;
 }
 
 .full-line-block {
-    background-color: var(--block-bg-color);
+    background: var(--block-bg-color);
 
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 300;
 
     margin: 0;
-    padding: 4.5rem 1rem;
+    padding: 6.5rem 1rem;
+
 }
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    .full-line-block {
+        font-size: 0.9rem;
+        padding: 6.5rem 2.5rem;
+    }    
+}
+.shadow-upstream-block {
+    box-shadow: 0px -4px 11px rgba(0,0,0,0.15),
+             0px -8px 13px rgba(0,0,0,0.1),
+             0px -18px 23px rgba(0,0,0,0.1);
+}
+
 .about-page .full-line-block {
     background-color: var(--block-bg-color-about-page);
     background-color: var(--block-bg-color);
@@ -42,7 +67,7 @@ body {
     /* background-color: #f1f1f1; */
 }
 
-.flex-container > .flex-item {
+.flex-container>.flex-item {
     flex: 1;
     /* background-color: DodgerBlue; */
 }
@@ -66,9 +91,9 @@ button {
 }
 
 button:hover {
-    border-color: #646cff;
-    background-color: #646cff;
-    color: #fff;
+    border-color: var(--ivory-color);
+    background-color: var(--btn-hover-bg-color);
+    color: #333 !important;
 }
 
 button:focus,

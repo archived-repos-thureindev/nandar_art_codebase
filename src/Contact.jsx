@@ -10,13 +10,14 @@ const Contact = () => {
     return (
         <main className="contact-page">
             <HeadBanner
-                title={"Ready to collaborate?\nLet's work together on your next project."}
+                title={"Ready to collaborate?\nLet's work together on your\nnext project."}
                 subtitle={""}
                 imgUrl={`url(${bannerImg})`}
             />
 
             {/* Contact */}
-            <div className="full-line-block inquiry-block" >
+            <div className="full-line-block inquiry-block shadow-upstream-block" >
+                
                 <div className="inquiry-container flex-container container">
                     <div className="flex-item inquiry-info">
 
@@ -90,10 +91,11 @@ const Contact = () => {
             </div>
 
             {/* Instagram */}
-            <h2 className="instagram-title">
-                <span>Follow along on Instagram for my latest works and updates.</span>
-            </h2>
-            <div className="">
+            <div className="instagram-block">
+                <h2 className="instagram-title">
+                    <span>Follow along on Instagram for my latest works and updates.</span>
+                </h2>
+
                 <div className="instagram-content full-line-block">
                     <InstaFeed username={""} instaLink={import.meta.env.VITE_INSTAGRAM_LINK} />
                 </div>

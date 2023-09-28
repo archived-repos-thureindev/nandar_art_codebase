@@ -1,9 +1,7 @@
-.about-page {
+.about-page {}
 
-}
-.about-page .intro-block {
+.about-page .intro-block {}
 
-}
 .about-container {
     margin: 0;
     flex-direction: row-reverse;
@@ -33,31 +31,31 @@
     padding: 5% 5% 3% 5%;
 
     text-align: left;
+    background: rgb(147, 56, 25);
+    background: linear-gradient(180deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
 
-    background-color: brown;
+    color: var(--ivory-color);
 }
 
 .about-info>* {
-
-    max-width: 500px;
-    /* margin-left: 10%; */
+    max-width: 32rem;
 }
 
 .about-info-title {
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .about-info-paragraph {
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .about-info-emphasis {
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -71,6 +69,12 @@
     padding-left: 20% !important;
 }
 
-.quote-content {}
+.quote-content {
+    font-size: 1rem;
+    font-weight: 300;
+}
 
-.quote-author {}
+.quote-author {
+    font-size: 1.2rem;
+    font-weight: 100;
+}

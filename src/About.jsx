@@ -15,7 +15,7 @@ const About = () => {
             />
 
             {/* About */}
-            <div className="flex-container about-container">
+            <div className="flex-container about-container shadow-upstream-block">
 
                 <div className="flex-item about-info">
                     <h2 className="about-info-title">
@@ -50,7 +50,9 @@ const About = () => {
 
             <h2 className="quote-block full-line-block">
                 <p className="quote-content">
-                    Every block of stone has a statue inside it and it is the task of the sculptor to discover it.
+                    Every block of stone has a statue inside it 
+                    <br />
+                    and it is the task of the sculptor to discover it.
                 </p>
                 <span className="quote-author">Michael Angelo</span>
             </h2>

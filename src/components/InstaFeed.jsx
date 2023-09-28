@@ -46,7 +46,7 @@ const InstaFeed = ({ username, instaLink }) => {
             </div>
             {/* ------------------------------------------------- */}
 
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center mt-4">
                 <OverlayTrigger
                     placement="top"
                     overlay={

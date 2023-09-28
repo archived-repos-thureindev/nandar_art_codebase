@@ -1,9 +1,17 @@
 .home-page {
 
+    font-family: 'Roboto Condensed', sans-serif; /* Light 300 Regular 400 Bold 700 */
+    font-weight: 300;
 }
 
 .home-page .intro-block {
     /* margin: 0;
     min-height: 30vh; */
     
+}
+
+.home-intro-text {
+    background: rgb(178,193,205) !important;
+    background: linear-gradient(142deg, rgba(178, 193, 205, 1) 0%, rgba(158, 158, 165, 1) 65%, rgba(111, 120, 141, 1) 100%) !important;
+    color: #fff !important;
 }
