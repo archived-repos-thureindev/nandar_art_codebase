@@ -1,8 +1,10 @@
 #root {
     --instagram-title-color: rgb(104, 115, 204);
-    --ivory-color: rgb(248, 246, 228); /* Ivory */
+    --ivory-color: rgb(248, 246, 228);
+    /* Ivory */
     --btn-hover-bg-color: rgba(248, 246, 228, 0.45);
-    --block-bg-color: #fdf6e4; /* Ivory */
+    --block-bg-color: #fdf6e4;
+    /* Ivory */
     --block-bg-color-about-page: rgb(218, 71, 71);
     --inquiry-block-color: rgb(234, 238, 242);
 
@@ -30,16 +32,18 @@
     padding: 6.5rem 1rem;
 
 }
+
 @media screen and (orientation: portrait) and (max-width: 768px) {
     .full-line-block {
         font-size: 0.9rem;
         padding: 6.5rem 2.5rem;
-    }    
+    }
 }
+
 .shadow-upstream-block {
-    box-shadow: 0px -4px 11px rgba(0,0,0,0.15),
-             0px -8px 13px rgba(0,0,0,0.1),
-             0px -18px 23px rgba(0,0,0,0.1);
+    box-shadow: 0px -4px 11px rgba(0, 0, 0, 0.15),
+        0px -8px 13px rgba(0, 0, 0, 0.1),
+        0px -18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .about-page .full-line-block {
@@ -68,7 +72,9 @@ body {
 }
 
 .flex-container>.flex-item {
-    flex: 1;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    min-height: 45vh;
     /* background-color: DodgerBlue; */
 }
 
@@ -78,22 +84,26 @@ body {
     }
 }
 
-button {
+button,
+.btn.btn-primary {
     border-radius: 8px;
-    border: 1px solid #1a1a1a;
-    background-color: none;
-    padding: 0.6em 1.2em;
-    font-size: 1.2rem;
-    font-weight: 600;
     font-family: inherit;
-    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
     transition: all 0.25s;
+
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+
+    color: var(--ivory-color);
+    background-color: #333;
+    border: 1px solid #333;
 }
 
-button:hover {
-    border-color: var(--ivory-color);
-    background-color: var(--btn-hover-bg-color);
-    color: #333 !important;
+button:hover,
+.btn.btn-primary:hover {
+    color: #333;
+    background-color: var(--ivory-color);
 }
 
 button:focus,
@@ -125,19 +135,18 @@ textarea {
     /* Allows vertical resizing */
 }
 
-/* Style the submit button */
-button[type="submit"] {
-    background-color: #000;
-    /* Adjust the color as needed */
-    color: #fff;
-    /* Adjust the text color as needed */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+
+.quote-block {
+    padding-right: 20% !important;
+    padding-left: 20% !important;
 }
 
-/* Add some hover effect to the submit button */
-button[type="submit"]:hover {
-    background-color: #333;
-    /* Adjust the hover color as needed */
+.quote-content {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    font-weight: 100;
 }

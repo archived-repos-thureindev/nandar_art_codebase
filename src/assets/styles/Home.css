@@ -1,17 +1,106 @@
-.home-page {
+.home-page {}
 
-    font-family: 'Roboto Condensed', sans-serif; /* Light 300 Regular 400 Bold 700 */
+.home-page .intro-block {}
+
+.home-container {
+    margin: 0;
+    flex-direction: row-reverse;
+}
+
+.home-container>.flex-item {
+    margin: 0;
+    text-align: left;
+}
+
+@media screen and (orientation: portrait) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .home-container>.flex-item {
+        margin: 0;
+    }
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5% 5% 3% 5%;
+
+    text-align: left;
+    background: rgb(147, 56, 25);
+    background: linear-gradient(180deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
+
+    color: var(--ivory-color);
+}
+
+.home-info>* {
+    max-width: 32rem;
+}
+
+#home-info-1 {
+    background: rgb(147, 56, 25);
+    background: linear-gradient(144deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
+}
+
+#home-info-2 {
+    background: rgb(239, 223, 177);
+    background: linear-gradient(166deg, rgba(239, 223, 177, 1) 0%, rgba(242, 230, 187, 1) 42%, rgba(166, 188, 204, 1) 88%);
+}
+
+.home-full-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    /* Light 300 Regular 400 Bold 700 */
+    font-size: 2.8em;
+    font-weight: 700;
+
+    text-align: center;
+}
+@media screen and (orientation: portrait) and (max-width: 768px){
+    .home-full-caption {
+        font-size: 1.6em;
+    }
+}
+
+.home-info-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-info-paragraph {
+    font-size: 1.2rem;
     font-weight: 300;
+    margin-bottom: 1rem;
 }
 
-.home-page .intro-block {
-    /* margin: 0;
-    min-height: 30vh; */
-    
+.home-info-emphasis {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-.home-intro-text {
-    background: rgb(178,193,205) !important;
-    background: linear-gradient(142deg, rgba(178, 193, 205, 1) 0%, rgba(158, 158, 165, 1) 65%, rgba(111, 120, 141, 1) 100%) !important;
-    color: #fff !important;
+.home-slideshow {
+    background-color: blueviolet;
+    min-height: 40vh;
+}
+
+.landscape-block {
+    /* min-height: 45vh;
+    max-height: 30vh;
+    overflow: hidden; */
+
+    /* height: 45vh; */
+}
+.landscape-block img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

@@ -1,7 +1,7 @@
 import './assets/styles/Contact.css';
 import HeadBanner from "./components/HeadBanner";
 import InstaFeed from './components/InstaFeed';
-import bannerImg from "./assets/images/contact-banner.png"
+import bannerImg from "./assets/images/full/contact-banner.png"
 
 import { HiOutlineMail } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
@@ -17,7 +17,7 @@ const Contact = () => {
 
             {/* Contact */}
             <div className="full-line-block inquiry-block shadow-upstream-block" >
-                
+
                 <div className="inquiry-container flex-container container">
                     <div className="flex-item inquiry-info">
 

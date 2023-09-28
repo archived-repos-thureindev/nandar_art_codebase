@@ -63,18 +63,3 @@
     background-color: blueviolet;
     min-height: 40vh;
 }
-
-.quote-block {
-    padding-right: 20% !important;
-    padding-left: 20% !important;
-}
-
-.quote-content {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.quote-author {
-    font-size: 1.2rem;
-    font-weight: 100;
-}

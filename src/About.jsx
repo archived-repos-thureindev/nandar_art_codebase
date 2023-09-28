@@ -2,14 +2,14 @@
 import HeadBanner from "./components/HeadBanner";
 
 import "./assets/styles/About.css";
-import bannerImg from "./assets/images/about-banner.png"
-import slideshowImg from "./assets/images/full/pavilion.png"
+import bannerImg from "./assets/images/full/about-banner.png"
+import slideshowImg from "./assets/images/full/icecream-shop-full.png"
 
 const About = () => {
     return (
         <main className="about-page">
             <HeadBanner
-                title={""}
+                title={"Hello, I'm Nandar.\nI make art\nto make life colorful."}
                 subtitle={""}
                 imgUrl={`url(${bannerImg})`}
             />
