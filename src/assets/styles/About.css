@@ -4,7 +4,7 @@
 
 .about-container {
     margin: 0;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .about-container>.flex-item {
@@ -12,9 +12,9 @@
     text-align: left;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (max-width: 768px) {
     .about-container {
-        flex-direction: column;
+        flex-direction: column-reverse !important;
     }
 
     .about-container>.flex-item {
@@ -34,6 +34,13 @@
     background: rgb(147, 56, 25);
     background: linear-gradient(180deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
 
+    background: rgb(253, 192, 244) !important;
+    background: linear-gradient(166deg, rgba(253, 192, 244, 1) 0%, rgba(253, 190, 102, 1) 42%, rgba(253, 246, 228, 1) 88%, rgba(253, 246, 228, 1) 100%) !important;
+
+    background: rgb(253, 192, 244) !important;
+    background: linear-gradient(166deg, #C8B2C5 0%, rgba(253, 190, 102, 1) 42%, #D07DAE 88%, #7D79AB 100%) !important;
+
+    
     color: var(--ivory-color);
 }
 
@@ -48,9 +55,11 @@
 }
 
 .about-info-paragraph {
+    color:#5249af;
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 1rem;
+    line-height: 2.4rem;
 }
 
 .about-info-emphasis {
@@ -60,6 +69,6 @@
 }
 
 .about-slideshow {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     min-height: 40vh;
 }

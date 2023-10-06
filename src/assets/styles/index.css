@@ -47,7 +47,7 @@
 }
 
 .about-page .full-line-block {
-    background-color: var(--block-bg-color-about-page);
+    /* background-color: var(--block-bg-color-about-page); */
     background-color: var(--block-bg-color);
 }
 
@@ -65,6 +65,9 @@ body {
     background-color: #f1f1f1;
 }
 
+img {
+    background-image: url("../images/bg.jpg");
+}
 
 .flex-container {
     display: flex;

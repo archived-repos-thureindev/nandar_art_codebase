@@ -1,12 +1,12 @@
 import './assets/styles/Contact.css';
 import HeadBanner from "./components/HeadBanner";
 import InstaFeed from './components/InstaFeed';
-import bannerImg from "./assets/images/full/contact-banner.png"
+// import bannerImg from "./assets/images/full/contact-banner.png"
 
 import { HiOutlineMail } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 
-const Contact = () => {
+const Contact = ({ bannerImg }) => {
     return (
         <main className="contact-page">
             <HeadBanner

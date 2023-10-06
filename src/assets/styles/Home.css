@@ -4,6 +4,9 @@
 
 .home-container {
     margin: 0;
+}
+
+.home-container.reverse-row {
     flex-direction: row-reverse;
 }
 
@@ -12,9 +15,9 @@
     text-align: left;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (max-width: 768px) {
     .home-container {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .home-container>.flex-item {
@@ -34,21 +37,31 @@
     background: rgb(147, 56, 25);
     background: linear-gradient(180deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
 
-    color: var(--ivory-color);
+    color: #A14222;
 }
 
 .home-info>* {
     max-width: 32rem;
 }
 
-#home-info-1 {
-    background: rgb(147, 56, 25);
-    background: linear-gradient(144deg, rgba(147, 56, 25, 1) 0%, rgba(155, 60, 27, 1) 25%, rgba(153, 59, 26, 1) 50%, rgba(191, 93, 44, 1) 62%, rgba(213, 119, 56, 1) 75%, rgba(221, 134, 68, 1) 100%);
-}
-
-#home-info-2 {
+.home-info {
+    color: #A14222;
     background: rgb(239, 223, 177);
     background: linear-gradient(166deg, rgba(239, 223, 177, 1) 0%, rgba(242, 230, 187, 1) 42%, rgba(166, 188, 204, 1) 88%);
+}
+
+#home-info-1 {}
+
+#home-info-2 {
+    color: #ebebeb;
+    background: rgb(101, 101, 101);
+    background: radial-gradient(circle, rgba(101, 101, 101, 1) 0%, rgba(51, 51, 51, 1) 42%, rgba(41, 41, 41, 1) 88%);
+}
+
+#home-info-3 {
+    color: #32243A;
+    background: rgb(231, 207, 201);
+    background: radial-gradient(circle, rgba(231, 207, 201, 1) 0%, rgba(190, 150, 142, 1) 42%, rgba(108, 69, 63, 1) 88%);
 }
 
 .home-full-caption {
@@ -63,7 +76,8 @@
 
     text-align: center;
 }
-@media screen and (orientation: portrait) and (max-width: 768px){
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
     .home-full-caption {
         font-size: 1.6em;
     }
@@ -88,7 +102,7 @@
 }
 
 .home-slideshow {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     min-height: 40vh;
 }
 
@@ -99,6 +113,7 @@
 
     /* height: 45vh; */
 }
+
 .landscape-block img {
     height: 100%;
     width: 100%;

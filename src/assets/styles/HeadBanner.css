@@ -45,14 +45,15 @@
     left: 0;
     z-index: -10;
 
-    background-image: var(--bg-imgUrl, url(https://images.unsplash.com/photo-1692728530148-05e4c86f1758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80));
+    background-image: url("../images/bg.jpg");
+    background-image: var(--bg-imgUrl);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .bg-image .mask {
-    background-color: rgba(0, 0, 0, 0.005);
+    background-color: rgba(0, 0, 0, 0.01);
     height: 100vh;
 
     overflow: hidden;

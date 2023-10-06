@@ -5,7 +5,10 @@ import PostData from './InstaData.js';
 import InstaPost from './InstaPost';
 import '../assets/styles/InstaFeed.css';
 
+import { Controller, Scene } from "react-scrollmagic";
+
 const InstaFeed = ({ username, instaLink }) => {
+    const delay = Math.random() * 0.6 + 0.2; // Generate a random value between 0.2 and 0.8
 
     return (
         <div className="container pt-4 pb-4">
@@ -27,23 +30,39 @@ const InstaFeed = ({ username, instaLink }) => {
                     </a>
                 </OverlayTrigger>
             </div>
-            
+
             {/* Insta feed --------------------------- */}
-            
-            <div className="insta-feed-container">
-                {PostData.map((postDetail, index) => {
-                    return (
-                        <InstaPost
-                            key={index}
-                            instaLink={postDetail.instaLink}
-                            instaCaption={postDetail.instaCaption}
-                            imageSrc={postDetail.imageSrc}
-                            imageAlt={postDetail.imageAlt}
-                            imageTitle={postDetail.imageTitle}
-                            bgOverlay={postDetail.bgOverlay} />
-                    )
-                })}
-            </div>
+
+            <Controller>
+                <Scene classToggle="fade-in" triggerElement="#instaFeedContainer">
+                    <div className="insta-feed-container" id="instaFeedContainer">
+                        {PostData.map((postDetail, index) => {
+                            return (
+                                <InstaPost
+                                    key={index}
+                                    instaLink={postDetail.instaLink}
+                                    instaCaption={postDetail.instaCaption}
+                                    imageSrc={postDetail.imageSrc}
+                                    imageAlt={postDetail.imageAlt}
+                                    imageTitle={postDetail.imageTitle}
+                                    bgOverlay={postDetail.bgOverlay} />
+                            )
+                        })}
+                    </div>
+                </Scene>
+            </Controller>
+
+            {/* <Controller>
+                <Scene classToggle="fade-in" triggerElement="#your-element-id">
+                    <div id="your-element-id" style={{ transitionDelay: `${delay}s` }}>
+
+
+                        <div className="insta-feed-container">
+                        </div>
+
+                    </div>
+                </Scene>
+            </Controller> */}
             {/* ------------------------------------------------- */}
 
             <div className="d-flex justify-content-center align-items-center mt-4">

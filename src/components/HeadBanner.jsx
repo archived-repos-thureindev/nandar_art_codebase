@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "../assets/styles/HeadBanner.css";
-import bannerImg from "../assets/images/full/default-banner.png"
+import bannerImg from "../assets/images/full/default-banner.png";
+import defaultBg from "../assets/images/bg.jpg";
 import PropTypes from "prop-types";
 
 const HeadBanner = ({ title, subtitle, imgUrl = `url(${bannerImg})` }) => {

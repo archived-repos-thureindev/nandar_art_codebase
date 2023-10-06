@@ -12,6 +12,13 @@
     /* Your existing styling for image title, if any */
 }
 
+.insta-img {
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+.insta-post:hover .insta-img {
+    transform: scale(1.2);
+}
 .insta-caption {
     position: absolute;
     top: 0;

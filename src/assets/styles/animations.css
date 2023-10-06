@@ -1,0 +1,18 @@
+/* animations.css */
+
+.fade-enter,
+.fade-exit.fade-exit-active {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active,
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter,
+.fade-exit,
+.fade-enter.fade-enter-active,
+.fade-exit.fade-exit-active {
+  transition: opacity 0.5s;
+}

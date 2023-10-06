@@ -8,7 +8,7 @@ const InstaPost = ({ instaLink, instaCaption, imageSrc, imageAlt, imageTitle, bg
         <figure className="insta-post" id={imageTitle.trim().toLowerCase().replace(/\s+/g, '-')}>
             
             <a href={`${instaLink ? instaLink : ""}`} className="insta-link">
-                <img src={imageSrc ? imageSrc : imgDefault} alt={imageAlt ? imageAlt : "Sorry, no alt"} />
+                <img className="insta-img" src={imageSrc ? imageSrc : imgDefault} alt={imageAlt ? imageAlt : "Sorry, no alt"} />
                 
                 {/* <figcaption className="image-title">
                     {imageTitle ? imageTitle : "Just an image"}
